@@ -5,6 +5,7 @@ body {
 }
 header {
   text-align: 0 auto;
+  color:#a5def1;
 }
 .weather.container {
   margin: 10px auto;
