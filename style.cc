@@ -3,7 +3,7 @@ body {
   margin: 20px auto;
 }
 header {
-  text-align: center;
+  text-align: 0 auto;
 }
 .weather.container {
   margin: 10px auto;
