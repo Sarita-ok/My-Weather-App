@@ -1,6 +1,7 @@
 body {
   font-family: arial, sans-serif;
   margin: 20px auto;
+  color:#a5def1;
 }
 header {
   text-align: 0 auto;
