@@ -20,61 +20,61 @@
  <body>
     <a href="https://www.netlify.com">Netlify</a>
     <div class="container">
-        <div class="weather-container">
-            <div class="clearfix"></div>
-            <header>
-            <strong>
-                My-Weather-App
-            </strong>
-            </header>
-            <img src="images/globe.svg" alt="" width="100" />
+     <div class="weather-container">
+     <div class="clearfix"></div>
+     <header>
+    <strong>
+      My-Weather-App
+    </strong>
+    </header>
+ <img src="images/globe.svg" alt="" width="100" />
 
-            <form id="weather__form" class="float-left">
-                <input type="text" id="weather__form-location" placeholder="Enter a city" autocomplete="off"
-                    autofocus="on">
-                <input type="submit" value="Search" class="btn btn-primary">
+ <form id="weather__form" class="float-left">
+    <input type="text" id="weather__form-location" placeholder="Enter a city" autocomplete="off"
+  autofocus="on">
+    <input type="submit" value="Search" class="btn btn-primary">
 
-                <button id="weather-refresh" class="float-left btn btn-success">Current Location</button>
-            </form>
-        </div>
+ <button id="weather-refresh" class="float-left btn btn-success">Current Location</button>
+ </form>
+     </div>
 
 
-        <div class="weather-summary">
-            <div class="weather-summary-header">
-                <h1 id="weather-location"></h1>
-                <div id="weather-date" class="weather-detail__text">
-                </div>
-                <div class="weather-detail__text" id="weather-description"></div>
-            </div>
+<div class="weather-summary">
+ <div class="weather-summary-header">
+     <h1 id="weather-location"></h1>
+     <div id="weather-date" class="weather-detail__text">
+      </div>
+   <div class="weather-detail__text" id="weather-description"></div>
+ </div>
 
-        </div>
-        <br />
+ </div>
+ <br />
+ <div class="col-6">
+ <div class="summary-weather">
+ <i class="fas fa-cloud-sun current-icon float-left"></i>
+<div class="float-left">
+ <span class="current-temperature" id="temperature"></span>
+     <span class="units">
+     <a href="#" id="celsius">°C</a>
+     <a href="#" id="fahrenheit">°F</a>
+     </span>
+     </div>
+    </div>
+    </div>
         <div class="col-6">
-            <div class="summary-weather">
-                <i class="fas fa-cloud-sun current-icon float-left"></i>
-                <div class="float-left">
-                    <span class="current-temperature" id="temperature"></span>
-                    <span class="units">
-                        <a href="#" id="celsius">°C</a>
-                        <a href="#" id="fahrenheit">°F</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <ul>
-                <li class="detailed humidity">
-                    <strong>Humidity </strong><span id="current-humidity"></span>%
-                </li>
-                <li class="detailed wind">
-                    <strong>Wind </strong> <span id="current-wind"></span> km/h
-                </li>
-            </ul>
-        </div>
+     <ul>
+     <li class="detailed humidity">
+     <strong>Humidity </strong><span id="current-humidity"></span>%
+     </li>
+     <li class="detailed wind">
+      <strong>Wind </strong> <span id="current-wind"></span> km/h
+    </li>
+    </ul>
+    </div>
 
-        <br />
+    <br />
 
-
+    
 
     </div>
     <script src="src/script.js"></script>
