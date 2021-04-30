@@ -4,7 +4,7 @@ body {
 
 header {
   text-align: 0 auto;
-  color: #a5def1;
+  color: #0f4c75;
 }
 .weather.container {
   margin: 10px auto;
@@ -22,7 +22,6 @@ h2 {
   font-size: 34px;
   line-height: 35px;
   padding: 0 5px;
-  text-align: center;
   line-height: 35px;
   margin: 5px auto;
   display: block;
