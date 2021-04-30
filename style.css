@@ -1,11 +1,18 @@
 body {
   font-family: arial, sans-serif;
   margin: 20px auto;
-  color:#a5def1;
+  color: #a5def1;
+}
+.weather-app {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid blue;
+  border-radius: 5px;
 }
 header {
   text-align: 0 auto;
-  color:#a5def1;
+  color: #a5def1;
 }
 .weather.container {
   margin: 10px auto;
