@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
  <body>
     <a href="https://www.netlify.com">Netlify</a>
@@ -48,36 +48,40 @@
  </div>
 
  </div>
- <br />
- <div class="col-6">
- <div class="summary-weather">
- <i class="fas fa-cloud-sun current-icon float-left"></i>
-<div class="float-left">
- <span class="current-temperature" id="temperature"></span>
-     <span class="units">
-     <a href="#" id="celsius">°C</a>
-     <a href="#" id="fahrenheit">°F</a>
-     </span>
-     </div>
-    </div>
-    </div>
-        <div class="col-6">
-     <ul>
-     <li class="detailed humidity">
-     <strong>Humidity </strong><span id="current-humidity"></span>%
-     </li>
-     <li class="detailed wind">
-      <strong>Wind </strong> <span id="current-wind"></span> km/h
-    </li>
+</form>
+<div class="overview">
+    <h1 id="city"></h1>
+    <ul>
+        <li>Last updated: <span id="date"></span></li>
+        <li id="description"></li>
     </ul>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="clearfix weather-temperature">
+            <img src="" alt="Clear" id="icon" class="float-left" />
+            <div class="float-left">
+                <strong id="temperature"></strong><span class="units"> °C</span>
+            </div>
+        </div>
     </div>
-
-    <br />
-
+    <div class="col-6">
+        <ul>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> m/h</li>
+        </ul>
+    </div>
+</div>
+<div class="weather-forecast" id="forecast"></div>
+</div>
+<small>
+    <a href="https://github.com/wecodeschool/vanilla-weather-app" target="_blank">Open-source code</a>
+    by Matt Delac
+</small>
+</div>
     
-
     </div>
-    <script src="src/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
