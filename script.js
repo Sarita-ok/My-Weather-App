@@ -15,28 +15,25 @@ function updateDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
   let day = days[listDays];
-
   return `${day} ${hours}:${minutes}`;
 }
-let currentDate = document.querySelector("#date");
+let currentDate = document.querySelector("#weather-date");
 let currentTime = new Date();
 currentDate.innerHTML = updateDate(currentTime);
-
 function showTemperature(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-
   document.querySelector("#current-humidity").innerHTML =
     response.data.main.humidity;
   document.querySelector("#current-wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#current-description").innerHTML =
+  document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
 }
 function search(city) {
@@ -45,16 +42,13 @@ function search(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
 }
-
 function searchCity(event) {
   event.preventDefault();
-  let city = document.querySelector("#search-city").value;
+  let city = document.querySelector("#weather__form-location").value;
   search(city);
 }
-
-let searchFunction = document.querySelector("#search-form");
+let searchFunction = document.querySelector("#weather__form");
 searchFunction.addEventListener("submit", searchCity);
-
 // Current Location
 function searchCurrentLocation(position) {
   let apiKey = "1249c7a87e8430d0f8a521161ee4206a";
@@ -64,7 +58,6 @@ function searchCurrentLocation(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
 }
-
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
@@ -75,21 +68,15 @@ function convertF(event) {
   let temperatureConversion = document.querySelector("#temperature");
   temperatureConversion.innerHTML = 48;
 }
-
 function convertC(event) {
   event.preventDefault();
   let temperatureConversion = document.querySelector("#temperature");
   temperatureConversion.innerHTML = 9;
 }
-
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", convertF);
-
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertC);
-
-let currentLocationButton = document.querySelector("#btn-current");
+let currentLocationButton = document.querySelector("#weather-refresh");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
 search("London");
-
