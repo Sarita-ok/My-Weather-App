@@ -60,3 +60,7 @@ li.current-date {
 .img {
   margin: auto;
 }
+.Weather-app-wrapper {
+  max-width: 600;
+  margin: 30px auto;
+}
