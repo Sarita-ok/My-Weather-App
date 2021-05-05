@@ -1,5 +1,6 @@
 body {
   font-family: arial, sans-serif;
+  max-width: 600;
 }
 
 .My-Weather-App {
