@@ -20,8 +20,10 @@ function updateDate(date) {
   let day = days[listDays];
   return `${day} ${hours}:${minutes}`;
 }
-let currentDate = document.querySelector("#weather-date");
-let currentTime = new Date();
+let currentDate = document.querySelector("#weather-date").innerHTML
+= updateDate(new Date
+let currentTime = new Date(response.data.dt * 1000)
+);
 currentDate.innerHTML = updateDate(currentTime);
 function showTemperature(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;
