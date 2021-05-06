@@ -63,6 +63,6 @@ li.current-date {
   margin: auto;
 }
 .My-Weather-app-wrapper {
-  max-width: 600;
-  margin: 30px auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
