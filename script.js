@@ -21,8 +21,7 @@ function updateDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 let currentDate = document.querySelector("#weather-date").innerHTML
-= updateDate(new Date
-let currentTime = new Date(response.data.dt * 1000)
+= updateDate(new Date(response.data.dt * 1000)
 );
 currentDate.innerHTML = updateDate(currentTime);
 function showTemperature(response) {
