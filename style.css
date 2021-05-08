@@ -1,138 +1,83 @@
-html {
-  height: 100%;
-}
 body {
-  background-image: url(https://images.hdqwalls.com/download/colorful-sunset-sky-5k-5u-1440x900.jpg);
-}
-.weather-app {
-  box-shadow: 1px 2px 15px #fa709a;
-  border-radius: 20px;
-  max-width: 720px;
-  background: linear-gradient(
-    105.4deg,
-    rgb(216, 176, 216) 23.9%,
-    rgb(53, 169, 215) 86.5%
-  );
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  padding: 20px 10px;
-  font-family: Quicksand, Arial, sans-serif;
+  font-family: "Della Respira", serif;
 }
 
 h1 {
-  font-size: 40px;
-  line-height: 50px;
-  color: aliceblue;
+  color: rgb(19, 121, 121);
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 30px;
 }
-p {
-  color: aliceblue;
-  font-size: 15px;
-  margin-bottom: 0 !important;
-  text-align: left;
-  line-height: 17px;
-}
-.temp {
-  font-size: 80px;
-  font-family: "Raleway", sans-serif;
-  line-height: 75px;
-  color: aliceblue;
-  font-weight: 300;
-  text-align: left;
-}
-.description {
-  font-size: 20px;
-  font-weight: 400;
-  color: #5a6275;
-}
-.current-time {
-  display: inline-block;
-  font-size: 22px;
-  font-weight: 400;
-  color: aliceblue;
-  line-height: 25px;
-}
-.locationButton {
-  padding: 5px 24px;
-  border-radius: 10%;
-  box-shadow: 1px 1px 7px #fa709a;
-  background: none;
-  border: 1px solid #fa709a;
-  color: #fa709a;
-}
-.locationButton:hover {
-  background-color: #fa709a;
-  color: white;
-}
-input.btn {
-  border: 1px solid #fa709a;
-  box-shadow: 1px 1px 7px #fa709a;
-  color: aliceblue;
-  font-weight: 400;
-}
-input.btn:hover {
-  background-color: #fa709a;
-  border: #fa709a;
-}
-.location-icon {
-  color: aliceblue;
-}
-.conditions {
-  list-style: none;
+
+ul {
+  margin: 0;
   padding: 0;
-  line-height: 1.5;
-  color: aliceblue;
-  position: relative;
-  bottom: 30px;
 }
 
-span.degrees {
-  text-decoration: none;
-  font-size: 25px;
-  position: relative;
-  bottom: 75px;
-  left: 87px;
-
-  color: aliceblue;
-  font-weight: 300;
-}
-
-.main-icon {
-  font-size: 140px;
-  line-height: 1;
-  position: relative;
-  top: 15px;
-  left: 10px;
-}
-
-.weather-icon-forecast {
-  display: block;
-  font-size: 35px;
-  margin: 0 auto;
-  line-height: 1;
-}
-#small-icons {
-  border: 1px #fa709a;
-  box-shadow: 1px 2px 7px #fa709a;
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin: 5px 5px;
-  text-align: center;
-  color: aliceblue;
-  width: 105px;
-}
-
-.github-link {
-  color: #5a6275;
-  text-decoration: none;
-  color: #fa709a;
-}
-footer {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  color: #666b75;
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(17, 14, 14);
   font-size: 16px;
-  opacity: 0.8;
+  font-weight: 200;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+small {
+  color: #e042be;
+  font-weight: 600;
+}
+.weather-app-wrap {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #fafbfc;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temp img {
+  float: left;
+  height: 60px;
+  width: 60px;
+}
+
+.weather-temp strong {
+  font-size: 40px;
+}
+
+.weather-temp .units {
+  position: relative;
+  top: -25px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forecast-day {
+  font-size: 16px;
+  opacity: 0.7;
+  color: #000;
+}
+
+.forecast-temp {
+  font-size: 13px;
+}
+
+.forecast-temp-min {
+  opacity: 0.7;
 }
