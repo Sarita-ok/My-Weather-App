@@ -30,14 +30,8 @@ function showTemperature(response) {
   response.data.name;
   document.querySelector("#temperature").innerHTML =
   Math.round(response.data.main.temp);
-}
 
-currentDate.innerHTML = updateDate(currentTime);
-function showTemperature(response) {
-  document.querySelector("#current-city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+
   document.querySelector("#current-humidity").innerHTML =
     response.data.main.humidity;
   document.querySelector("#current-wind").innerHTML = Math.round(
@@ -45,7 +39,11 @@ function showTemperature(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
-}
+
+  document.querySelector("#weather-date").innerHTML -
+  updateDate(new Date(response.date.dt * 1000));
+  }
+
 function search(city) {
   let apiKey = "1249c7a87e8430d0f8a521161ee4206a";
   let units = "metric";
