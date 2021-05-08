@@ -156,4 +156,4 @@ fahrenheit.addEventListener("click", changeToFahrenheit);
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", changeToCelsius);
 
-search("Essen");
+
