@@ -1,82 +1,138 @@
+html {
+  height: 100%;
+}
 body {
-  font-family: arial, sans-serif;
-  max-width: 600;
-  background-color: radial-gradient(
-    circle at 7.5% 24%,
-    rgb(237, 161, 193) 0%,
-    rgb(250, 178, 172) 25.5%,
-    rgb(190, 228, 210) 62.3%,
-    rgb(215, 248, 247) 93.8%
+  background-image: url(https://images.hdqwalls.com/download/colorful-sunset-sky-5k-5u-1440x900.jpg);
+}
+.weather-app {
+  box-shadow: 1px 2px 15px #fa709a;
+  border-radius: 20px;
+  max-width: 720px;
+  background: linear-gradient(
+    105.4deg,
+    rgb(216, 176, 216) 23.9%,
+    rgb(53, 169, 215) 86.5%
   );
-}
-
-.My-Weather-App {
-  max-width: 200;
-  margin: 30 auto;
-  border: 1px solid cornflowerblue;
-  padding: 20px;
-  background-color: cadetblue;
-}
-
-header {
-  text-align: 0 auto;
-  color: #0f4c75;
-}
-.weather.container {
-  margin: 10px auto;
-  border: 3px solid #0f4c75;
-  border-radius: 50px;
-  padding: 20px;
-  background-color: #f0f5f9;
-  box-shadow: 3px 3px 3px #52616b;
-  max-width: 35%;
-}
-
-h1,
-h2 {
-  color: #0f4c75;
-  font-weight: 900;
-  font-size: 34px;
-  line-height: 35px;
-  padding: 0 5px;
-  line-height: 35px;
-  margin: 5px auto;
   display: block;
-}
-
-.weather-view__button--temp {
-  border-radius: 2px 0 0 2px;
-  font-weight: 300;
-  text-align: right;
-}
-
-.weather-view__button--wind {
-  border-left: none;
-  border-radius: 0 2px 2px 0;
-  text-align: right;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  margin: 0;
-}
-li.current-forecast {
-  font-weight: 600;
-  font-size: 25px;
-}
-
-li.current-date {
-  font-weight: 450;
-  font-size: 18px;
-}
-.img {
-  margin: auto;
-}
-.My-Weather-app-wrapper {
-  max-width: 600px;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  font-family: Quicksand, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  color: aliceblue;
+}
+p {
+  color: aliceblue;
+  font-size: 15px;
+  margin-bottom: 0 !important;
+  text-align: left;
+  line-height: 17px;
+}
+.temp {
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  line-height: 75px;
+  color: aliceblue;
+  font-weight: 300;
+  text-align: left;
+}
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5a6275;
+}
+.current-time {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 400;
+  color: aliceblue;
+  line-height: 25px;
+}
+.locationButton {
+  padding: 5px 24px;
+  border-radius: 10%;
+  box-shadow: 1px 1px 7px #fa709a;
+  background: none;
+  border: 1px solid #fa709a;
+  color: #fa709a;
+}
+.locationButton:hover {
+  background-color: #fa709a;
+  color: white;
+}
+input.btn {
+  border: 1px solid #fa709a;
+  box-shadow: 1px 1px 7px #fa709a;
+  color: aliceblue;
+  font-weight: 400;
+}
+input.btn:hover {
+  background-color: #fa709a;
+  border: #fa709a;
+}
+.location-icon {
+  color: aliceblue;
+}
+.conditions {
+  list-style: none;
+  padding: 0;
+  line-height: 1.5;
+  color: aliceblue;
+  position: relative;
+  bottom: 30px;
+}
+
+span.degrees {
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+  bottom: 75px;
+  left: 87px;
+
+  color: aliceblue;
+  font-weight: 300;
+}
+
+.main-icon {
+  font-size: 140px;
+  line-height: 1;
+  position: relative;
+  top: 15px;
+  left: 10px;
+}
+
+.weather-icon-forecast {
+  display: block;
+  font-size: 35px;
+  margin: 0 auto;
+  line-height: 1;
+}
+#small-icons {
+  border: 1px #fa709a;
+  box-shadow: 1px 2px 7px #fa709a;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px 5px;
+  text-align: center;
+  color: aliceblue;
+  width: 105px;
+}
+
+.github-link {
+  color: #5a6275;
+  text-decoration: none;
+  color: #fa709a;
+}
+footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: #666b75;
+  font-size: 16px;
+  opacity: 0.8;
 }
